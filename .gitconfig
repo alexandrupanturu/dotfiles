@@ -1,0 +1,36 @@
+[color]
+	interactive = auto
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+    lg = log --graph --pretty=brief --date=relative
+    lga = log --graph --pretty=authorbrief --date=relative
+    lgm = log --graph --pretty=brief --date=relative --stat --first-parent -m
+
+[user]
+	email = alexandru.panturu@emag.ro
+	name = Alexandru Panturu
+
+[merge]
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
